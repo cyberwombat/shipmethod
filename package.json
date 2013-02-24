@@ -1,17 +1,17 @@
 {
-  "name": "shipper",
+  "name": "shipmethod",
   "description": "Determines shipping carrier based on tracking number",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
-    "name": "Yashua Savage",
-    "email": "http://urbanlotus.com"
+    "name": "Gone Green",
+    "email": "http://gonegreenstore.com"
   },
   "licenses": [
     "MIT"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/cyberwombat/shipper.git"
+    "url": "git://github.com/gonegreen/shipmethod.git"
   },
   "engine": [
     "node >=0.6"
