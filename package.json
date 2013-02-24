@@ -1,0 +1,21 @@
+{
+  "name": "shipper",
+  "description": "Determines shipping carrier based on tracking number",
+  "version": "0.0.1",
+  "author": {
+    "name": "Yashua Savage",
+    "email": "http://urbanlotus.com"
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cyberwombat/shipper.git"
+  },
+  "engine": [
+    "node >=0.6"
+  ]
+
+
+}
