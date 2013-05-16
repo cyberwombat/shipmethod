@@ -14,8 +14,8 @@ var fixtures = [
   { carrier: 'UPS', number: '1Z 999 AA1 01 2345 6784' },
   { carrier: 'FedEx', number: '817456723444' },
   { carrier: 'FedEx', number: '817456723444222' },
+  { carrier: 'USPS', number: 'LJ893369662US' },
 ]
-
 
 
 describe('Shipping Method', function(){
