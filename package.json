@@ -1,7 +1,7 @@
 {
   "name": "shipmethod",
   "description": "Determines shipping carrier based on tracking number",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Gone Green",
     "email": "http://gonegreenstore.com"
