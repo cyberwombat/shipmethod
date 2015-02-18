@@ -2,6 +2,7 @@ var ShipMethod = require('../lib/shipmethod');
 
 // Misc code from carriers
 var fixtures = [
+  { carrier: 'UPS', number: '1ZX6797w0395652653'},
   { carrier: 'USPS', number: 'EA 000 000 000 US' },
   { carrier: 'USPS', number: 'EC 000 000 000 US' },
   { carrier: 'USPS', number: 'CP 000 000 000 US' },
@@ -12,11 +13,10 @@ var fixtures = [
   { carrier: 'USPS', number: '7000 0000 0000 0000 0000' },
   { carrier: 'USPS', number: '2300 0000 0000 0000 0000' },
   { carrier: 'UPS', number: '1Z 999 AA1 01 2345 6784' },
-  { carrier: undefined, number: '1Z 4WX 950 03 0419 6569' },
   { carrier: 'FedEx', number: '817456723444' },
   { carrier: 'FedEx', number: '817456723444222' },
   { carrier: 'USPS', number: 'LJ893369662US' },
-]
+];
 
 
 describe('Shipping Method', function(){
@@ -35,6 +35,6 @@ describe('Shipping Method', function(){
           done();
         }
       });
-    })
+    });
   });
 });
