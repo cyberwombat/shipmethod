@@ -24,3 +24,15 @@ test('getCarrier()', t => {
     t.is(f.carrier, getCarrier(f.number))
   })
 })
+
+test('getCarrierLink()', t => {
+  const { getCarrierLink } = require('./index.js')
+  const link = getCarrierLink('usps', 'foo')
+  t.is(link, 'https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=foo')
+})
+
+test('getCarrierLink() with invalid carrier', t => {
+  const { getCarrierLink } = require('./index.js')
+  const link = getCarrierLink('foo', 'bar')
+  t.falsy(link)
+})
