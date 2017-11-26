@@ -1,8 +1,37 @@
+### Node ###
+# Logs
+logs
 *.log
-.DS_Store
-Icon?
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+### OSX ###
+# Standard 
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
 ._*
-.Spotlight-V100
-.Trashes
-.tmp
-npm-debug.log
+
+# Dotenv
+.env

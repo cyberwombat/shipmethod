@@ -1,14 +1,25 @@
 Shipping Tracker
 ================
 
-Node module for returning shipping carrier based on tracking info. Currently supports UPS, USPS and FedEx.
+NodeJS module for returning shipping carrier based on tracking info. Currently supports UPS, USPS and FedEx.
 
-`npm install git://github.com/gonegreen/shipmethod.git`
+## Install
+```
+npm i shipmethod
+yarn add shipmethod
+```
 
-`var ShipMethod = require('shipmethod');`
+## Usage
+```
+const { getCarrier } = require('shipmethod')
+const carrier = getCarrier('XXXXXXXXXXXXXXX') // Your tracking number
+console.log(carrier) // Ex: 'UPS'
+```
 
-`var sm = new ShipMethod();var carrier = sm.getCarrier('XXXXXXXXXXXXXXX');`
+## Changelog
 
+### 2.0.0
+- Breaking API changes.
 
 
 

@@ -1,8 +1,8 @@
-var ShipMethod = require('../lib/shipmethod');
+const test = require('ava')
 
 // Misc code from carriers
-var fixtures = [
-  { carrier: 'UPS', number: '1ZX6797w0395652653'},
+const fixtures = [
+  { carrier: 'UPS', number: '1ZX6797w0395652653' },
   { carrier: 'USPS', number: 'EA 000 000 000 US' },
   { carrier: 'USPS', number: 'EC 000 000 000 US' },
   { carrier: 'USPS', number: 'CP 000 000 000 US' },
@@ -15,26 +15,12 @@ var fixtures = [
   { carrier: 'UPS', number: '1Z 999 AA1 01 2345 6784' },
   { carrier: 'FedEx', number: '817456723444' },
   { carrier: 'FedEx', number: '817456723444222' },
-  { carrier: 'USPS', number: 'LJ893369662US' },
-];
+  { carrier: 'USPS', number: 'LJ893369662US' }
+]
 
-
-describe('Shipping Method', function(){
-
-  var shipper = null;
-
-  beforeEach(function(done) {
-    shipper = new ShipMethod();
-    done();
-  });
-
-  describe('getCarrier', function() {
-    fixtures.forEach(function(f) {
-      it('should return ' + f.carrier + ' when given tracking #' + f.number, function(done) {
-        if(f.carrier === shipper.getCarrier(f.number)) {
-          done();
-        }
-      });
-    });
-  });
-});
+test('getCarrier()', t => {
+  const { getCarrier } = require('./index.js')
+  fixtures.forEach(f => {
+    t.is(f.carrier, getCarrier(f.number))
+  })
+})

@@ -1,27 +1,36 @@
 {
   "name": "shipmethod",
   "description": "Determines shipping carrier based on tracking number",
-  "version": "0.0.8",
+  "version": "2.0.0",
   "author": {
-    "name": "Gone Green",
-    "email": "http://gonegreenstore.com"
+    "name": "cybewombat",
+    "email": "cyberwombat@protonmail.com"
+  },
+  "scripts": {
+    "test": "ava test.spec.js"
   },
   "licenses": [
     "MIT"
+  ],
+  "files": [
+    "lib/"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/gonegreen/shipmethod.git"
   },
   "engine": [
-    "node >=0.6"
+    "node >=7.6.0"
   ],
-  "main": "./lib/shipmethod.js",
+  "main": "./lib/index.js",
   "readme": "Shipping Tracker\n================\n\nNode module for returning shipping carrier based on tracking info. Currently supports UPS, USPS and FedEx.\n\n`npm install git://github.com/gonegreen/shipmethod.git`\n\n`var ShipMethod = require('shipmethod');`\n\n`var sm = new ShipMethod();var carrier = sm.getCarrier('XXXXXXXXXXXXXXX');`\n\n\n\n\n",
   "readmeFilename": "README.md",
   "_id": "shipmethod@0.0.3",
   "dist": {
     "shasum": "ced53c15312b2e95703dad4a06b3dd6402efe97b"
   },
-  "_from": "shipmethod@git://github.com/gonegreen/shipmethod.git"
+  "_from": "shipmethod@git://github.com/gonegreen/shipmethod.git",
+  "devDependencies": {
+    "ava": "^0.23.0"
+  }
 }
