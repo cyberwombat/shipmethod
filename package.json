@@ -1,7 +1,7 @@
 {
   "name": "shipmethod",
   "description": "ShipMethod determines shipping carrier name and tracking page url based on tracking number. Currently supports UPS, USPS and FedEx.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": {
     "name": "cyberwombat",
     "email": "cyberwombat@protonmail.com"
@@ -12,8 +12,7 @@
   "licenses": [
     "MIT"
   ],
-  "files": [
-    "lib/"
+  "files": [    
   ],
   "repository": {
     "type": "git",
@@ -22,7 +21,7 @@
   "engine": [
     "node >=7.6.0"
   ],
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "devDependencies": {
     "ava": "^0.23.0"
   }
