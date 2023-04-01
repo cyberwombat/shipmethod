@@ -3,7 +3,9 @@ const util = require('util')
 const urls = {
   ups: 'https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums=%s',
   fedex: 'https://www.fedex.com/Tracking?action=track&tracknumbers=%s',
-  usps: 'https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=%s'
+  usps: 'https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=%s',
+  canpar: 'https://www.canpar.com/en/tracking/track.htm?barcode=%s',
+  'canada post': 'https://www.canadapost-postescanada.ca/track-reperage/en#/search?searchFor=%s',
 }
 
 const carriers = [
@@ -38,7 +40,15 @@ const carriers = [
   {
     name: 'USPS',
     regex: /^[A-Za-z]{2}[0-9]+US$/i
-  }
+  },
+  {
+    name: 'Canpar',
+    regex: /^([A-Z]){1}((\d{21,})|(\d{20})|(\d{12}))/i,
+  },
+  {
+    name: 'Canada Post',
+    regex: /^((\d{16})|([\w\d]{11,13}))/i,
+  },
 ]
 
 const getCarrier = track => {

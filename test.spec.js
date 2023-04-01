@@ -15,12 +15,18 @@ const fixtures = [
   { carrier: 'UPS', number: '1Z 999 AA1 01 2345 6784' },
   { carrier: 'FedEx', number: '817456723444' },
   { carrier: 'FedEx', number: '817456723444222' },
-  { carrier: 'USPS', number: 'LJ893369662US' }
+  { carrier: 'USPS', number: 'LJ893369662US' },
+  { carrier: 'Canpar', number: 'D464000260000001441001'},
+  { carrier: 'Canpar', number: 'D576003380000007995001'},
+  { carrier: 'Canada Post', number: '1111 1111 1111 1111'},
+  { carrier: 'Canada Post', number: 'AA 111 111 111 AA'},
 ]
+
 
 test('getCarrier()', t => {
   const { getCarrier } = require('./index.js')
   fixtures.forEach(f => {
+    console.log(getCarrier(f.number))
     t.is(f.carrier, getCarrier(f.number))
   })
 })
