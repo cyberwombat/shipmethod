@@ -43,11 +43,11 @@ const carriers = [
   },
   {
     name: 'Canpar',
-    regex: /^([A-Z]){1}((\d{21,})|(\d{20})|(\d{12}))/g,
+    regex: /^([A-Z]){1}((\d{21,})|(\d{20})|(\d{12}))/i,
   },
   {
     name: 'Canada Post',
-    regex: /^((\d{16})|([\w\d]{11,13}))/g,
+    regex: /^((\d{16})|([\w\d]{11,13}))/i,
   },
 ]
 

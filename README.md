@@ -35,5 +35,8 @@ console.log(link) // Ex: https://tools.usps.com/go/TrackConfirmAction_input?qtc_
 #### 2.1.0
 - Added `getCarrierLink`
 
+#### 2.1.3
+- Added Canpar and Canada Post
+
 
 
