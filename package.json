@@ -6,6 +6,10 @@
     "name": "cyberwombat",
     "email": "cyberwombat@protonmail.com"
   },
+  "contributors": [{
+    "name": "Brian Burkard",
+    "email": "brianburkard@gmail.com"
+  }],
   "scripts": {
     "test": "ava test.spec.js --verbose"
   },
